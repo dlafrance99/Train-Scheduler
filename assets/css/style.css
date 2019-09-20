@@ -1,0 +1,71 @@
+body {
+    background-color: #ffffff;
+}
+
+.header {
+    background-color: #845007;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: -10px;
+}
+
+table {
+    margin: 0;
+    border-spacing: 0;
+}
+
+th {
+    padding: 5px 90px 5px 5px;
+    font-size: 18px;
+}
+
+
+td {
+    padding: 5px;
+    margin: auto;   
+}
+
+h1 {
+    margin: 20px;
+}
+
+.currentSchedule {
+    border: solid;
+    border-color: #3a4660;
+    border-radius: 5px;
+    border-width: 5px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.divHeader {
+    background-color: #3a4660;
+    padding: 10px;
+    color: #ffffff; 
+}
+
+.formHeader {
+    border: solid;
+    border-color: #3a4660;
+    border-radius: 5px;
+    border-width: 5px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.trainForm {
+    padding: 10px;
+}
+
+input {
+    width: 95%;
+    margin-bottom: 10px;
+}
