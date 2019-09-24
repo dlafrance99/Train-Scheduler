@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
 </head>
 
 <body>
@@ -23,19 +26,13 @@
         <div class="divHeader">
             Current Train Schedule
         </div>
-        <table>
+        <table id="table-body">
             <th>Train Name</th>
             <th>Destination</th>
             <th>Frequency (min)</th>
             <th>Next Arrival</th>
             <th>Minutes Away</th>
-            <tr>
-                <td>Grand Lakesville Express</td>
-                <td>Grand Lakesville</td>
-                <td>65</td>
-                <td>10:05 AM</td>
-                <td>64</td>
-            </tr>
+           
         </table>
     </div>
 
@@ -46,17 +43,17 @@
         <div class="trainForm">
 
             Train Name <br>
-            <input type="text" name="trainName">
+            <input type="text" id="train-name" name="trainName">
             <br> Destination <br>
-            <input type="text" name="trainName">
+            <input type="text" id="destination" name="destination">
             <br> First Train Time (HH:mm - Military time) <br>
-            <input type="text" name="trainName">
+            <input type="time" value="00:00" id="first-train" name="first train">
             <br> Frequency (min) <br>
-            <input type="text" name="trainName">
+            <input type="text" id="frequency" name="frequency">
             <button type="submit" id="submit">Submit</button>
         </div>
     </form>
-
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script rel="javaScript" type="text/javaScript" src="assets/javaScript/java.js">
     </script>
 </body>
